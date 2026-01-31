@@ -8005,7 +8005,7 @@ class _TranslatedBodyState extends State<_TranslatedBody> {
       future: _future,
       builder: (context, snapshot) {
         if (snapshot.connectionState == ConnectionState.waiting) {
-          return Text(widget.strings.traduciendo, style: widget.style);
+          return _buildFormattedBody(widget.text, widget.style);
         }
         final value = snapshot.data?.trim().isNotEmpty == true
             ? snapshot.data!
@@ -8050,7 +8050,7 @@ class _TranslatedText extends StatelessWidget {
           future: TranslationService.instance.translate(text),
           builder: (context, snapshot) {
             if (snapshot.connectionState == ConnectionState.waiting) {
-              return Text(strings.traduciendo, style: style);
+              return Text(text, style: style);
             }
             final value = snapshot.data?.trim().isNotEmpty == true
                 ? snapshot.data!
@@ -8634,7 +8634,11 @@ class _TranslatedPatakiBodyState extends State<_TranslatedPatakiBody> {
       future: _future,
       builder: (context, snapshot) {
         if (snapshot.connectionState == ConnectionState.waiting) {
-          return Text(widget.strings.traduciendo, style: widget.textStyle);
+          return Column(
+            crossAxisAlignment: CrossAxisAlignment.start,
+            children:
+                _buildPatakiParagraphsFromText(widget.text, widget.textStyle),
+          );
         }
         final value = snapshot.data?.trim().isNotEmpty == true
             ? snapshot.data!
