@@ -7887,6 +7887,7 @@ DEFENSIVAS ANTE LA AGRESIÓN.''',
 const _patakiesByOduName = <String, List<String>>{
   'BABA OGBE': _babaEjiogbePatakies,
   'OGBE OYECU': _ogbeOyecuPatakies,
+  'OGBE OYEKU': _ogbeOyecuPatakies,
 };
 
 class _OduSection extends StatelessWidget {
