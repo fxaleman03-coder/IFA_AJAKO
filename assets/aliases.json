@@ -1,0 +1,58 @@
+{
+  "entryAliases": {
+    "BABA OGBE": [
+      "BABA EJIOGBE",
+      "EJIOGBE",
+      "EJI OGBE",
+      "OGBE MEJI"
+    ],
+    "OJUANI MEJI": [
+      "OWONRIN MEJI"
+    ],
+    "OKANA MEJI": [
+      "OKANRAN MEJI"
+    ],
+    "OSHE MEJI": [
+      "OSE MEJI"
+    ],
+    "IROSO MEJI": [
+      "IROSUN MEJI"
+    ],
+    "OTRUPON MEJI": [
+      "OTURUPON MEJI"
+    ],
+    "OYEKUN MEJI": [
+      "OYEKU MEJI"
+    ]
+  },
+  "familyAliases": {
+    "OGBE": [
+      "EJIOGBE"
+    ],
+    "OKANA": [
+      "OKANRAN"
+    ],
+    "OJUANI": [
+      "OWONRIN"
+    ],
+    "OSHE": [
+      "OSE"
+    ],
+    "IROSO": [
+      "IROSUN"
+    ],
+    "OTRUPON": [
+      "OTURUPON"
+    ],
+    "OYEKUN": [
+      "OYEKU",
+      "OYECUN"
+    ],
+    "OTURA": [
+      "OTUURA"
+    ],
+    "OGUNDA": [
+      "OGUNDAA"
+    ]
+  }
+}

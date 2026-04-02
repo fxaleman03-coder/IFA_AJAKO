@@ -1,0 +1,385 @@
+{
+  "OKANA YABILE": {
+    "nace": {
+      "move_to_desc_regex": [
+        "^\\s*\\d{1,3}\\s*-\\s*AQU[ÍI]\\s*:[\\s\\S]*$"
+      ]
+    },
+    "descripcion": {
+      "append_from_nace_regex": [
+        "^\\s*\\d{1,3}\\s*-\\s*AQU[ÍI]\\s*:[\\s\\S]*$"
+      ]
+    }
+  },
+  "_example": {
+    "OKANA MEJI": {
+      "nace": {
+        "keep_regex": [
+          "(?im)^\\s*(naci[oó]|aqui|aquí|habla|marca|senala|señala)\\b.*$"
+        ],
+        "remove_regex": [],
+        "move_to_desc_regex": [
+          "(?is)DESCRIPCION\\s+DEL\\s+ODO.*$"
+        ]
+      },
+      "descripcion": {
+        "prepend_from_nace_regex": []
+      }
+    }
+  },
+  "IWORI MEJI": {
+    "nace": {
+      "move_to_eshu_regex": [
+        "^\\s*(?:\\d{1,3}\\s*[-.)]\\s*)?(?:AQU[ÍI]\\s*:\\s*)?ESHU(?:\\b|[\\s:\\-–—])[\\s\\S]{0,2500}?(?=^\\s*(?:EN\\s+ESTE\\s+OD[ÙU]|DESCRIPCI[ÓO]N|EWES|OBRAS|DICE\\s+IF[ÁA]|PAT(?:A|Á)K(?:I|Í)E|HISTORIAS|REZO|SUYERE|ESHU\\s+DEL\\s+OD[ÙU])\\b|(?![\\s\\S]))"
+      ]
+    }
+  },
+  "OBARA KASIKA": {
+    "nace": {
+      "move_to_eshu_regex": [
+        "^\\s*(?:\\d{1,3}\\s*[-.)]\\s*)?(?:AQU[ÍI]\\s*:\\s*)?ESHU(?:\\b|[\\s:\\-–—])[\\s\\S]{0,2500}?(?=^\\s*(?:EN\\s+ESTE\\s+OD[ÙU]|DESCRIPCI[ÓO]N|EWES|OBRAS|DICE\\s+IF[ÁA]|PAT(?:A|Á)K(?:I|Í)E|HISTORIAS|REZO|SUYERE|ESHU\\s+DEL\\s+OD[ÙU])\\b|(?![\\s\\S]))"
+      ],
+      "move_to_desc_regex": [
+        "^\\s*(?:AQU[ÍI]\\s*:\\s*)?(?:DESCRIPCI[ÓO]N\\s+DEL\\s+OD(?:Ù|U|O)|ESTE\\s+ES\\s+EL\\s+OD(?:Ù|U|O)|ESTE\\s+OD(?:Ù|U|O)|ESTE\\s+SIGNO|ESTE\\s+IF[ÁA])\\b[\\s\\S]{0,6000}?(?=^\\s*(?:EN\\s+ESTE\\s+OD(?:Ù|U|O)\\b|DESCRIPCI\\w*|EWES\\b|ESHU\\b|OBRAS\\b|DICE\\s+IF[ÁA]\\b|PAT(?:A|Á)K(?:I|Í)E|HISTORIAS?|REZO\\b|SUYERE\\b)\\b|\\$(?![\\s\\S]))"
+      ],
+      "remove_from_nace_regex": [
+        "^\\s*(?:AQU[ÍI]\\s*:\\s*)?(?:DESCRIPCI[ÓO]N\\s+DEL\\s+OD(?:Ù|U|O)|ESTE\\s+ES\\s+EL\\s+OD(?:Ù|U|O)|ESTE\\s+OD(?:Ù|U|O)|ESTE\\s+SIGNO|ESTE\\s+IF[ÁA])\\b[\\s\\S]{0,6000}?(?=^\\s*(?:EN\\s+ESTE\\s+OD(?:Ù|U|O)\\b|DESCRIPCI\\w*|EWES\\b|ESHU\\b|OBRAS\\b|DICE\\s+IF[ÁA]\\b|PAT(?:A|Á)K(?:I|Í)E|HISTORIAS?|REZO\\b|SUYERE\\b)\\b|\\$(?![\\s\\S]))"
+      ]
+    },
+    "descripcion": {
+      "append_from_nace_regex": [
+        "^\\s*(?:AQU[ÍI]\\s*:\\s*)?(?:DESCRIPCI[ÓO]N\\s+DEL\\s+OD(?:Ù|U|O)|ESTE\\s+ES\\s+EL\\s+OD(?:Ù|U|O)|ESTE\\s+OD(?:Ù|U|O)|ESTE\\s+SIGNO|ESTE\\s+IF[ÁA])\\b[\\s\\S]{0,6000}?(?=^\\s*(?:EN\\s+ESTE\\s+OD(?:Ù|U|O)\\b|DESCRIPCI\\w*|EWES\\b|ESHU\\b|OBRAS\\b|DICE\\s+IF[ÁA]\\b|PAT(?:A|Á)K(?:I|Í)E|HISTORIAS?|REZO\\b|SUYERE\\b)\\b|\\$(?![\\s\\S]))"
+      ]
+    }
+  },
+  "OBARA OJUANI": {
+    "nace": {
+      "move_to_eshu_regex": [
+        "ESHU-ELEGBA\\.[\\s\\S]{0,2500}"
+      ]
+    }
+  },
+  "OGBE ROSO": {
+    "nace": {
+      "move_to_eshu_regex": [
+        "^\\s*(?:\\d{1,3}\\s*[-.)]\\s*)?(?:AQU[ÍI]\\s*:\\s*)?ESHU(?:\\b|[\\s:\\-–—])[\\s\\S]{0,2500}?(?=^\\s*(?:EN\\s+ESTE\\s+OD[ÙU]|DESCRIPCI[ÓO]N|EWES|OBRAS|DICE\\s+IF[ÁA]|PAT(?:A|Á)K(?:I|Í)E|HISTORIAS|REZO|SUYERE|ESHU\\s+DEL\\s+OD[ÙU])\\b|(?![\\s\\S]))"
+      ]
+    }
+  },
+  "OJUANI HERMOSO": {
+    "nace": {
+      "move_to_eshu_regex": [
+        "^\\s*(?:\\d{1,3}\\s*[-.)]\\s*)?(?:AQU[ÍI]\\s*:\\s*)?ESHU(?:\\b|[\\s:\\-–—])[\\s\\S]{0,2500}?(?=^\\s*(?:EN\\s+ESTE\\s+OD[ÙU]|DESCRIPCI[ÓO]N|EWES|OBRAS|DICE\\s+IF[ÁA]|PAT(?:A|Á)K(?:I|Í)E|HISTORIAS|REZO|SUYERE|ESHU\\s+DEL\\s+OD[ÙU])\\b|(?![\\s\\S]))"
+      ]
+    }
+  },
+  "OJUANI POKON": {
+    "nace": {
+      "move_to_desc_regex": [
+        "^\\s*(?:(?:DESCRIPCI(?:Ó|O)N\\s+DEL\\s+OD(?:Ù|U|O)\\b[^\\n]*\\n\\s*)?ESTE\\s+ES\\s+EL\\s+OD(?:Ù|U|O)\\b|\\d{1,3}\\s*[-.)]\\s*AQU[ÍI]\\s*:[^\\n]*)[\\s\\S]{0,6000}?(?=^\\s*(?:EWES|OBRAS|DICE\\s+IF[ÁA]|ESHU(?:\\s+DEL\\s+OD(?:Ù|U|O))?|PAT(?:A|Á)K(?:I|Í)E(?:S)?|HISTORIAS|REZO|SUYERE|EN\\s+ESTE\\s+OD(?:Ù|U|O)(?:\\s+NACE)?)\\b|(?![\\s\\S]))"
+      ],
+      "remove_from_nace_regex": [
+        "^\\s*(?:(?:DESCRIPCI(?:Ó|O)N\\s+DEL\\s+OD(?:Ù|U|O)\\b[^\\n]*\\n\\s*)?ESTE\\s+ES\\s+EL\\s+OD(?:Ù|U|O)\\b|\\d{1,3}\\s*[-.)]\\s*AQU[ÍI]\\s*:[^\\n]*)[\\s\\S]{0,6000}?(?=^\\s*(?:EWES|OBRAS|DICE\\s+IF[ÁA]|ESHU(?:\\s+DEL\\s+OD(?:Ù|U|O))?|PAT(?:A|Á)K(?:I|Í)E(?:S)?|HISTORIAS|REZO|SUYERE|EN\\s+ESTE\\s+OD(?:Ù|U|O)(?:\\s+NACE)?)\\b|(?![\\s\\S]))"
+      ]
+    },
+    "descripcion": {
+      "append_from_nace_regex": [
+        "^\\s*(?:(?:DESCRIPCI(?:Ó|O)N\\s+DEL\\s+OD(?:Ù|U|O)\\b[^\\n]*\\n\\s*)?ESTE\\s+ES\\s+EL\\s+OD(?:Ù|U|O)\\b|\\d{1,3}\\s*[-.)]\\s*AQU[ÍI]\\s*:[^\\n]*)[\\s\\S]{0,6000}?(?=^\\s*(?:EWES|OBRAS|DICE\\s+IF[ÁA]|ESHU(?:\\s+DEL\\s+OD(?:Ù|U|O))?|PAT(?:A|Á)K(?:I|Í)E(?:S)?|HISTORIAS|REZO|SUYERE|EN\\s+ESTE\\s+OD(?:Ù|U|O)(?:\\s+NACE)?)\\b|(?![\\s\\S]))"
+      ]
+    }
+  },
+  "OKANA ROSO": {
+    "nace": {
+      "move_to_eshu_regex": [
+        "AQU[ÍI]\\s*:\\s*ESHU\\s+NO\\s+QUER[ÍI]A\\s+PERDONAR[\\s\\S]{0,2500}"
+      ]
+    }
+  },
+  "OKANA SA": {
+    "nace": {
+      "move_to_eshu_regex": [
+        "^\\s*(?:\\d{1,3}\\s*[-.)]\\s*)?(?:AQU[ÍI]\\s*:\\s*)?ESHU(?:\\b|[\\s:\\-–—])[\\s\\S]{0,2500}?(?=^\\s*(?:EN\\s+ESTE\\s+OD[ÙU]|DESCRIPCI[ÓO]N|EWES|OBRAS|DICE\\s+IF[ÁA]|PAT(?:A|Á)K(?:I|Í)E|HISTORIAS|REZO|SUYERE|ESHU\\s+DEL\\s+OD[ÙU])\\b|(?![\\s\\S]))"
+      ]
+    }
+  },
+  "OSA MEJI": {
+    "nace": {
+      "move_to_eshu_regex": [
+        "^\\s*(?:\\d{1,3}\\s*[-.)]\\s*)?(?:AQU[ÍI]\\s*:\\s*)?ESHU(?:\\b|[\\s:\\-–—])[\\s\\S]{0,2500}?(?=^\\s*(?:EN\\s+ESTE\\s+OD[ÙU]|DESCRIPCI[ÓO]N|EWES|OBRAS|DICE\\s+IF[ÁA]|PAT(?:A|Á)K(?:I|Í)E|HISTORIAS|REZO|SUYERE|ESHU\\s+DEL\\s+OD[ÙU])\\b|(?![\\s\\S]))"
+      ]
+    }
+  },
+  "OSA ROSO": {
+    "nace": {
+      "move_to_eshu_regex": [
+        "ESHU\\s+Y\\s+DESPU[ÉE]S\\s+SE\\s+LE\\s+PONE\\s+PLAZA[\\s\\S]{0,2500}"
+      ]
+    }
+  },
+  "OYEKUN MEJI": {
+    "nace": {
+      "move_to_eshu_regex": [
+        "ESHU\\s*:\\s*DIVINIDAD\\s+DEL\\s+BIEN\\s+Y\\s+EL\\s+MAL[\\s\\S]{0,2500}"
+      ]
+    }
+  },
+  "IKA FEFE": {
+    "nace": {
+      "move_to_eshu_regex": [
+        "ESHU(?=[\\s\\S]{0,120}(?:ELEGBA|ARONI|MANIB|ELEGUA|ELEGÚA|ELEGBA\\.|:))[\\s\\S]{0,3500}?(?=^\\s*(?:EN\\s+ESTE\\s+OD(?:Ù|U|O)|EWES|OBRAS|DICE\\s+IF[ÁA]|PAT(?:A|Á)K(?:I|Í)E|HISTORIAS|REZO|SUYERE)\\b|(?![\\s\\S]))"
+      ]
+    },
+    "eshu": {
+      "move_to_desc_regex": [
+        "(?:DESCRIPCI(?:Ó|O)N\\s+DEL\\s+OD(?:Ù|U|O)\\b|ESTE\\s+ES\\s+EL\\s+ODU\\b[\\s\\S]{0,40}?#?\\s*\\d*|ESTE\\s+ODU\\b[\\s\\S]{0,40}?#?\\s*\\d*)[\\s\\S]{0,3500}(?![\\s\\S])"
+      ],
+      "remove_from_eshu_regex": [
+        "(?:DESCRIPCI(?:Ó|O)N\\s+DEL\\s+OD(?:Ù|U|O)\\b|ESTE\\s+ES\\s+EL\\s+ODU\\b[\\s\\S]{0,40}?#?\\s*\\d*|ESTE\\s+ODU\\b[\\s\\S]{0,40}?#?\\s*\\d*)[\\s\\S]{0,3500}(?![\\s\\S])"
+      ]
+    },
+    "descripcion": {
+      "append_from_eshu_regex": [
+        "(?:DESCRIPCI(?:Ó|O)N\\s+DEL\\s+OD(?:Ù|U|O)\\b|ESTE\\s+ES\\s+EL\\s+ODU\\b[\\s\\S]{0,40}?#?\\s*\\d*|ESTE\\s+ODU\\b[\\s\\S]{0,40}?#?\\s*\\d*)[\\s\\S]{0,3500}(?![\\s\\S])"
+      ]
+    }
+  },
+  "IKA MEJI": {
+    "nace": {
+      "move_to_eshu_regex": [
+        "ESHU(?=[\\s\\S]{0,120}(?:ELEGBA|ARONI|MANIB|ELEGUA|ELEGÚA|ELEGBA\\.|:))[\\s\\S]{0,3500}?(?=^\\s*(?:EN\\s+ESTE\\s+OD(?:Ù|U|O)|EWES|OBRAS|DICE\\s+IF[ÁA]|PAT(?:A|Á)K(?:I|Í)E|HISTORIAS|REZO|SUYERE)\\b|(?![\\s\\S]))"
+      ]
+    },
+    "eshu": {
+      "move_to_desc_regex": [
+        "(?:DESCRIPCI(?:Ó|O)N\\s+DEL\\s+OD(?:Ù|U|O)\\b|ESTE\\s+ES\\s+EL\\s+ODU\\b[\\s\\S]{0,40}?#?\\s*\\d*|ESTE\\s+ODU\\b[\\s\\S]{0,40}?#?\\s*\\d*)[\\s\\S]{0,3500}(?![\\s\\S])"
+      ],
+      "remove_from_eshu_regex": [
+        "(?:DESCRIPCI(?:Ó|O)N\\s+DEL\\s+OD(?:Ù|U|O)\\b|ESTE\\s+ES\\s+EL\\s+ODU\\b[\\s\\S]{0,40}?#?\\s*\\d*|ESTE\\s+ODU\\b[\\s\\S]{0,40}?#?\\s*\\d*)[\\s\\S]{0,3500}(?![\\s\\S])"
+      ]
+    },
+    "descripcion": {
+      "append_from_eshu_regex": [
+        "(?:DESCRIPCI(?:Ó|O)N\\s+DEL\\s+OD(?:Ù|U|O)\\b|ESTE\\s+ES\\s+EL\\s+ODU\\b[\\s\\S]{0,40}?#?\\s*\\d*|ESTE\\s+ODU\\b[\\s\\S]{0,40}?#?\\s*\\d*)[\\s\\S]{0,3500}(?![\\s\\S])"
+      ]
+    }
+  },
+  "BABA OGBE": {
+    "eshu": {
+      "remove_from_eshu_regex": [
+        "^\\s*(REZO\\b)[\\s\\S]{0,3500}?(?=^\\s*(?:EN\\s+ESTE\\s+OD(?:Ù|U|O)|DESCRIPCI\\w*|EWES\\b|OBRAS\\b|DICE\\s+IF[ÁA]|PAT(?:A|Á)K(?:I|Í)E|HISTOR\\w*|REZO\\b|SUYERE\\b|ESHU\\b)\\b|$(?![\\s\\S]))"
+      ],
+      "move_to_rezo_regex": [
+        "^\\s*(REZO\\b)[\\s\\S]{0,3500}?(?=^\\s*(?:EN\\s+ESTE\\s+OD(?:Ù|U|O)|DESCRIPCI\\w*|EWES\\b|OBRAS\\b|DICE\\s+IF[ÁA]|PAT(?:A|Á)K(?:I|Í)E|HISTOR\\w*|REZO\\b|SUYERE\\b|ESHU\\b)\\b|$(?![\\s\\S]))"
+      ]
+    },
+    "rezoYoruba": {
+      "append_from_eshu_regex": [
+        "^\\s*(REZO\\b)[\\s\\S]{0,3500}?(?=^\\s*(?:EN\\s+ESTE\\s+OD(?:Ù|U|O)|DESCRIPCI\\w*|EWES\\b|OBRAS\\b|DICE\\s+IF[ÁA]|PAT(?:A|Á)K(?:I|Í)E|HISTOR\\w*|REZO\\b|SUYERE\\b|ESHU\\b)\\b|$(?![\\s\\S]))"
+      ]
+    }
+  },
+  "ODI BATRUPON": {
+    "eshu": {
+      "remove_from_eshu_regex": [
+        "^\\s*(HISTOR\\w*\\b)[\\s\\S]{0,3500}?(?=^\\s*(?:EN\\s+ESTE\\s+OD(?:Ù|U|O)|DESCRIPCI\\w*|EWES\\b|OBRAS\\b|DICE\\s+IF[ÁA]|PAT(?:A|Á)K(?:I|Í)E|HISTOR\\w*|REZO\\b|SUYERE\\b|ESHU\\b)\\b|$(?![\\s\\S]))"
+      ],
+      "move_to_historias_regex": [
+        "^\\s*(HISTOR\\w*\\b)[\\s\\S]{0,3500}?(?=^\\s*(?:EN\\s+ESTE\\s+OD(?:Ù|U|O)|DESCRIPCI\\w*|EWES\\b|OBRAS\\b|DICE\\s+IF[ÁA]|PAT(?:A|Á)K(?:I|Í)E|HISTOR\\w*|REZO\\b|SUYERE\\b|ESHU\\b)\\b|$(?![\\s\\S]))"
+      ]
+    },
+    "historiasYPatakies": {
+      "append_from_eshu_regex": [
+        "^\\s*(HISTOR\\w*\\b)[\\s\\S]{0,3500}?(?=^\\s*(?:EN\\s+ESTE\\s+OD(?:Ù|U|O)|DESCRIPCI\\w*|EWES\\b|OBRAS\\b|DICE\\s+IF[ÁA]|PAT(?:A|Á)K(?:I|Í)E|HISTOR\\w*|REZO\\b|SUYERE\\b|ESHU\\b)\\b|$(?![\\s\\S]))"
+      ]
+    }
+  },
+  "OJUANI BATRUPON": {
+    "eshu": {
+      "remove_from_eshu_regex": [
+        "^\\s*(REZO\\b)[\\s\\S]{0,3500}?(?=^\\s*(?:EN\\s+ESTE\\s+OD(?:Ù|U|O)|DESCRIPCI\\w*|EWES\\b|OBRAS\\b|DICE\\s+IF[ÁA]|PAT(?:A|Á)K(?:I|Í)E|HISTOR\\w*|REZO\\b|SUYERE\\b|ESHU\\b)\\b|$(?![\\s\\S]))"
+      ],
+      "move_to_rezo_regex": [
+        "^\\s*(REZO\\b)[\\s\\S]{0,3500}?(?=^\\s*(?:EN\\s+ESTE\\s+OD(?:Ù|U|O)|DESCRIPCI\\w*|EWES\\b|OBRAS\\b|DICE\\s+IF[ÁA]|PAT(?:A|Á)K(?:I|Í)E|HISTOR\\w*|REZO\\b|SUYERE\\b|ESHU\\b)\\b|$(?![\\s\\S]))"
+      ]
+    },
+    "rezoYoruba": {
+      "append_from_eshu_regex": [
+        "^\\s*(REZO\\b)[\\s\\S]{0,3500}?(?=^\\s*(?:EN\\s+ESTE\\s+OD(?:Ù|U|O)|DESCRIPCI\\w*|EWES\\b|OBRAS\\b|DICE\\s+IF[ÁA]|PAT(?:A|Á)K(?:I|Í)E|HISTOR\\w*|REZO\\b|SUYERE\\b|ESHU\\b)\\b|$(?![\\s\\S]))"
+      ]
+    }
+  },
+  "OTURA MEJI": {
+    "eshu": {
+      "remove_from_eshu_regex": [
+        "^\\s*(REZO\\b)[\\s\\S]{0,3500}?(?=^\\s*(?:EN\\s+ESTE\\s+OD(?:Ù|U|O)|DESCRIPCI\\w*|EWES\\b|OBRAS\\b|DICE\\s+IF[ÁA]|PAT(?:A|Á)K(?:I|Í)E|HISTOR\\w*|REZO\\b|SUYERE\\b|ESHU\\b)\\b|$(?![\\s\\S]))",
+        "^\\s*(SUYERE\\b)[\\s\\S]{0,3500}?(?=^\\s*(?:EN\\s+ESTE\\s+OD(?:Ù|U|O)|DESCRIPCI\\w*|EWES\\b|OBRAS\\b|DICE\\s+IF[ÁA]|PAT(?:A|Á)K(?:I|Í)E|HISTOR\\w*|REZO\\b|SUYERE\\b|ESHU\\b)\\b|$(?![\\s\\S]))"
+      ],
+      "move_to_rezo_regex": [
+        "^\\s*(REZO\\b)[\\s\\S]{0,3500}?(?=^\\s*(?:EN\\s+ESTE\\s+OD(?:Ù|U|O)|DESCRIPCI\\w*|EWES\\b|OBRAS\\b|DICE\\s+IF[ÁA]|PAT(?:A|Á)K(?:I|Í)E|HISTOR\\w*|REZO\\b|SUYERE\\b|ESHU\\b)\\b|$(?![\\s\\S]))"
+      ],
+      "move_to_suyere_regex": [
+        "^\\s*(SUYERE\\b)[\\s\\S]{0,3500}?(?=^\\s*(?:EN\\s+ESTE\\s+OD(?:Ù|U|O)|DESCRIPCI\\w*|EWES\\b|OBRAS\\b|DICE\\s+IF[ÁA]|PAT(?:A|Á)K(?:I|Í)E|HISTOR\\w*|REZO\\b|SUYERE\\b|ESHU\\b)\\b|$(?![\\s\\S]))"
+      ]
+    },
+    "rezoYoruba": {
+      "append_from_eshu_regex": [
+        "^\\s*(REZO\\b)[\\s\\S]{0,3500}?(?=^\\s*(?:EN\\s+ESTE\\s+OD(?:Ù|U|O)|DESCRIPCI\\w*|EWES\\b|OBRAS\\b|DICE\\s+IF[ÁA]|PAT(?:A|Á)K(?:I|Í)E|HISTOR\\w*|REZO\\b|SUYERE\\b|ESHU\\b)\\b|$(?![\\s\\S]))"
+      ]
+    },
+    "suyereYoruba": {
+      "append_from_eshu_regex": [
+        "^\\s*(SUYERE\\b)[\\s\\S]{0,3500}?(?=^\\s*(?:EN\\s+ESTE\\s+OD(?:Ù|U|O)|DESCRIPCI\\w*|EWES\\b|OBRAS\\b|DICE\\s+IF[ÁA]|PAT(?:A|Á)K(?:I|Í)E|HISTOR\\w*|REZO\\b|SUYERE\\b|ESHU\\b)\\b|$(?![\\s\\S]))"
+      ]
+    }
+  },
+  "OYEKUN TESIA": {
+    "eshu": {
+      "remove_from_eshu_regex": [
+        "^\\s*(SUYERE\\b)[\\s\\S]{0,3500}?(?=^\\s*(?:EN\\s+ESTE\\s+OD(?:Ù|U|O)|DESCRIPCI\\w*|EWES\\b|OBRAS\\b|DICE\\s+IF[ÁA]|PAT(?:A|Á)K(?:I|Í)E|HISTOR\\w*|REZO\\b|SUYERE\\b|ESHU\\b)\\b|$(?![\\s\\S]))"
+      ],
+      "move_to_suyere_regex": [
+        "^\\s*(SUYERE\\b)[\\s\\S]{0,3500}?(?=^\\s*(?:EN\\s+ESTE\\s+OD(?:Ù|U|O)|DESCRIPCI\\w*|EWES\\b|OBRAS\\b|DICE\\s+IF[ÁA]|PAT(?:A|Á)K(?:I|Í)E|HISTOR\\w*|REZO\\b|SUYERE\\b|ESHU\\b)\\b|$(?![\\s\\S]))"
+      ]
+    },
+    "suyereYoruba": {
+      "append_from_eshu_regex": [
+        "^\\s*(SUYERE\\b)[\\s\\S]{0,3500}?(?=^\\s*(?:EN\\s+ESTE\\s+OD(?:Ù|U|O)|DESCRIPCI\\w*|EWES\\b|OBRAS\\b|DICE\\s+IF[ÁA]|PAT(?:A|Á)K(?:I|Í)E|HISTOR\\w*|REZO\\b|SUYERE\\b|ESHU\\b)\\b|$(?![\\s\\S]))"
+      ]
+    }
+  },
+  "OTURA ADAKOY": {
+    "eshu": {
+      "move_to_suyere_regex": [
+        "SUYERE\\s*:\\s*(?:(?:(?!\\n\\s*\\n)[\\s\\S]){0,600})"
+      ],
+      "remove_from_eshu_regex": [
+        "SUYERE\\s*:\\s*(?:(?:(?!\\n\\s*\\n)[\\s\\S]){0,600})"
+      ]
+    },
+    "suyereYoruba": {
+      "append_from_eshu_regex": [
+        "SUYERE\\s*:\\s*(?:(?:(?!\\n\\s*\\n)[\\s\\S]){0,600})"
+      ]
+    }
+  },
+  "OTURA POMPEYO": {
+    "nace": {
+      "move_to_desc_regex": [
+        "^\\s*(?:AQU[ÍI]\\s*:\\s*)?(?:DESCRIPCI[ÓO]N\\s+DEL\\s+OD(?:Ù|U|O)|ESTE\\s+ES\\s+EL\\s+OD(?:Ù|U|O)|ESTE\\s+OD(?:Ù|U|O)|ESTE\\s+SIGNO|ESTE\\s+IF[ÁA])\\b[\\s\\S]{0,6000}?(?=^\\s*(?:EN\\s+ESTE\\s+OD(?:Ù|U|O)\\b|DESCRIPCI\\w*|EWES\\b|ESHU\\b|OBRAS\\b|DICE\\s+IF[ÁA]\\b|PAT(?:A|Á)K(?:I|Í)E|HISTORIAS?|REZO\\b|SUYERE\\b)\\b|\\$(?![\\s\\S]))"
+      ],
+      "remove_from_nace_regex": [
+        "^\\s*(?:AQU[ÍI]\\s*:\\s*)?(?:DESCRIPCI[ÓO]N\\s+DEL\\s+OD(?:Ù|U|O)|ESTE\\s+ES\\s+EL\\s+OD(?:Ù|U|O)|ESTE\\s+OD(?:Ù|U|O)|ESTE\\s+SIGNO|ESTE\\s+IF[ÁA])\\b[\\s\\S]{0,6000}?(?=^\\s*(?:EN\\s+ESTE\\s+OD(?:Ù|U|O)\\b|DESCRIPCI\\w*|EWES\\b|ESHU\\b|OBRAS\\b|DICE\\s+IF[ÁA]\\b|PAT(?:A|Á)K(?:I|Í)E|HISTORIAS?|REZO\\b|SUYERE\\b)\\b|\\$(?![\\s\\S]))"
+      ]
+    },
+    "descripcion": {
+      "append_from_nace_regex": [
+        "^\\s*(?:AQU[ÍI]\\s*:\\s*)?(?:DESCRIPCI[ÓO]N\\s+DEL\\s+OD(?:Ù|U|O)|ESTE\\s+ES\\s+EL\\s+OD(?:Ù|U|O)|ESTE\\s+OD(?:Ù|U|O)|ESTE\\s+SIGNO|ESTE\\s+IF[ÁA])\\b[\\s\\S]{0,6000}?(?=^\\s*(?:EN\\s+ESTE\\s+OD(?:Ù|U|O)\\b|DESCRIPCI\\w*|EWES\\b|ESHU\\b|OBRAS\\b|DICE\\s+IF[ÁA]\\b|PAT(?:A|Á)K(?:I|Í)E|HISTORIAS?|REZO\\b|SUYERE\\b)\\b|\\$(?![\\s\\S]))"
+      ]
+    }
+  },
+  "OTURA SA": {
+    "nace": {
+      "move_to_desc_regex": [
+        "^\\s*(?:AQU[ÍI]\\s*:\\s*)?(?:DESCRIPCI[ÓO]N\\s+DEL\\s+OD(?:Ù|U|O)|ESTE\\s+ES\\s+EL\\s+OD(?:Ù|U|O)|ESTE\\s+OD(?:Ù|U|O)|ESTE\\s+SIGNO|ESTE\\s+IF[ÁA])\\b[\\s\\S]{0,6000}?(?=^\\s*(?:EN\\s+ESTE\\s+OD(?:Ù|U|O)\\b|DESCRIPCI\\w*|EWES\\b|ESHU\\b|OBRAS\\b|DICE\\s+IF[ÁA]\\b|PAT(?:A|Á)K(?:I|Í)E|HISTORIAS?|REZO\\b|SUYERE\\b)\\b|\\$(?![\\s\\S]))"
+      ],
+      "remove_from_nace_regex": [
+        "^\\s*(?:AQU[ÍI]\\s*:\\s*)?(?:DESCRIPCI[ÓO]N\\s+DEL\\s+OD(?:Ù|U|O)|ESTE\\s+ES\\s+EL\\s+OD(?:Ù|U|O)|ESTE\\s+OD(?:Ù|U|O)|ESTE\\s+SIGNO|ESTE\\s+IF[ÁA])\\b[\\s\\S]{0,6000}?(?=^\\s*(?:EN\\s+ESTE\\s+OD(?:Ù|U|O)\\b|DESCRIPCI\\w*|EWES\\b|ESHU\\b|OBRAS\\b|DICE\\s+IF[ÁA]\\b|PAT(?:A|Á)K(?:I|Í)E|HISTORIAS?|REZO\\b|SUYERE\\b)\\b|\\$(?![\\s\\S]))"
+      ]
+    },
+    "descripcion": {
+      "append_from_nace_regex": [
+        "^\\s*(?:AQU[ÍI]\\s*:\\s*)?(?:DESCRIPCI[ÓO]N\\s+DEL\\s+OD(?:Ù|U|O)|ESTE\\s+ES\\s+EL\\s+OD(?:Ù|U|O)|ESTE\\s+OD(?:Ù|U|O)|ESTE\\s+SIGNO|ESTE\\s+IF[ÁA])\\b[\\s\\S]{0,6000}?(?=^\\s*(?:EN\\s+ESTE\\s+OD(?:Ù|U|O)\\b|DESCRIPCI\\w*|EWES\\b|ESHU\\b|OBRAS\\b|DICE\\s+IF[ÁA]\\b|PAT(?:A|Á)K(?:I|Í)E|HISTORIAS?|REZO\\b|SUYERE\\b)\\b|\\$(?![\\s\\S]))"
+      ]
+    }
+  },
+  "ODI BERE": {
+    "nace": {
+      "move_to_desc_regex": [
+        "^\\s*(?:AQU[ÍI]\\s*:\\s*)?(?:DESCRIPCI[ÓO]N\\s+DEL\\s+OD(?:Ù|U|O)|ESTE\\s+ES\\s+EL\\s+OD(?:Ù|U|O)|ESTE\\s+OD(?:Ù|U|O)|ESTE\\s+SIGNO|ESTE\\s+IF[ÁA])\\b[\\s\\S]{0,6000}?(?=^\\s*(?:EN\\s+ESTE\\s+OD(?:Ù|U|O)\\b|DESCRIPCI\\w*|EWES\\b|ESHU\\b|OBRAS\\b|DICE\\s+IF[ÁA]\\b|PAT(?:A|Á)K(?:I|Í)E|HISTORIAS?|REZO\\b|SUYERE\\b)\\b|\\$(?![\\s\\S]))"
+      ],
+      "remove_from_nace_regex": [
+        "^\\s*(?:AQU[ÍI]\\s*:\\s*)?(?:DESCRIPCI[ÓO]N\\s+DEL\\s+OD(?:Ù|U|O)|ESTE\\s+ES\\s+EL\\s+OD(?:Ù|U|O)|ESTE\\s+OD(?:Ù|U|O)|ESTE\\s+SIGNO|ESTE\\s+IF[ÁA])\\b[\\s\\S]{0,6000}?(?=^\\s*(?:EN\\s+ESTE\\s+OD(?:Ù|U|O)\\b|DESCRIPCI\\w*|EWES\\b|ESHU\\b|OBRAS\\b|DICE\\s+IF[ÁA]\\b|PAT(?:A|Á)K(?:I|Í)E|HISTORIAS?|REZO\\b|SUYERE\\b)\\b|\\$(?![\\s\\S]))"
+      ]
+    },
+    "descripcion": {
+      "append_from_nace_regex": [
+        "^\\s*(?:AQU[ÍI]\\s*:\\s*)?(?:DESCRIPCI[ÓO]N\\s+DEL\\s+OD(?:Ù|U|O)|ESTE\\s+ES\\s+EL\\s+OD(?:Ù|U|O)|ESTE\\s+OD(?:Ù|U|O)|ESTE\\s+SIGNO|ESTE\\s+IF[ÁA])\\b[\\s\\S]{0,6000}?(?=^\\s*(?:EN\\s+ESTE\\s+OD(?:Ù|U|O)\\b|DESCRIPCI\\w*|EWES\\b|ESHU\\b|OBRAS\\b|DICE\\s+IF[ÁA]\\b|PAT(?:A|Á)K(?:I|Í)E|HISTORIAS?|REZO\\b|SUYERE\\b)\\b|\\$(?![\\s\\S]))"
+      ]
+    }
+  },
+  "OSA KULEYA": {
+    "nace": {
+      "move_to_desc_regex": [
+        "^\\s*(?:AQU[ÍI]\\s*:\\s*)?(?:DESCRIPCI[ÓO]N\\s+DEL\\s+OD(?:Ù|U|O)|ESTE\\s+ES\\s+EL\\s+OD(?:Ù|U|O)|ESTE\\s+OD(?:Ù|U|O)|ESTE\\s+SIGNO|ESTE\\s+IF[ÁA])\\b[\\s\\S]{0,6000}?(?=^\\s*(?:EN\\s+ESTE\\s+OD(?:Ù|U|O)\\b|DESCRIPCI\\w*|EWES\\b|ESHU\\b|OBRAS\\b|DICE\\s+IF[ÁA]\\b|PAT(?:A|Á)K(?:I|Í)E|HISTORIAS?|REZO\\b|SUYERE\\b)\\b|\\$(?![\\s\\S]))"
+      ],
+      "remove_from_nace_regex": [
+        "^\\s*(?:AQU[ÍI]\\s*:\\s*)?(?:DESCRIPCI[ÓO]N\\s+DEL\\s+OD(?:Ù|U|O)|ESTE\\s+ES\\s+EL\\s+OD(?:Ù|U|O)|ESTE\\s+OD(?:Ù|U|O)|ESTE\\s+SIGNO|ESTE\\s+IF[ÁA])\\b[\\s\\S]{0,6000}?(?=^\\s*(?:EN\\s+ESTE\\s+OD(?:Ù|U|O)\\b|DESCRIPCI\\w*|EWES\\b|ESHU\\b|OBRAS\\b|DICE\\s+IF[ÁA]\\b|PAT(?:A|Á)K(?:I|Í)E|HISTORIAS?|REZO\\b|SUYERE\\b)\\b|\\$(?![\\s\\S]))"
+      ]
+    },
+    "descripcion": {
+      "append_from_nace_regex": [
+        "^\\s*(?:AQU[ÍI]\\s*:\\s*)?(?:DESCRIPCI[ÓO]N\\s+DEL\\s+OD(?:Ù|U|O)|ESTE\\s+ES\\s+EL\\s+OD(?:Ù|U|O)|ESTE\\s+OD(?:Ù|U|O)|ESTE\\s+SIGNO|ESTE\\s+IF[ÁA])\\b[\\s\\S]{0,6000}?(?=^\\s*(?:EN\\s+ESTE\\s+OD(?:Ù|U|O)\\b|DESCRIPCI\\w*|EWES\\b|ESHU\\b|OBRAS\\b|DICE\\s+IF[ÁA]\\b|PAT(?:A|Á)K(?:I|Í)E|HISTORIAS?|REZO\\b|SUYERE\\b)\\b|\\$(?![\\s\\S]))"
+      ]
+    }
+  },
+  "OSHE DI": {
+    "nace": {
+      "move_to_desc_regex": [
+        "^\\s*ESTE ODU PROHÍBE MOJARSE CON AGUA LLUVIA\\.[\\s\\S]{0,6000}?(?=^\\s*EN ESTE ODU, LA MUJER EMPEÑA SUS COSAS Y SI SU MARIDO NO LE DA EL DINERO, PIERDE)"
+      ],
+      "remove_from_nace_regex": [
+        "^\\s*ESTE ODU PROHÍBE MOJARSE CON AGUA LLUVIA\\.[\\s\\S]{0,6000}?(?=^\\s*EN ESTE ODU, LA MUJER EMPEÑA SUS COSAS Y SI SU MARIDO NO LE DA EL DINERO, PIERDE)"
+      ]
+    },
+    "descripcion": {
+      "append_from_nace_regex": [
+        "^\\s*ESTE ODU PROHÍBE MOJARSE CON AGUA LLUVIA\\.[\\s\\S]{0,6000}?(?=^\\s*EN ESTE ODU, LA MUJER EMPEÑA SUS COSAS Y SI SU MARIDO NO LE DA EL DINERO, PIERDE)"
+      ]
+    }
+  },
+  "OTURA LAKENTU": {
+    "nace": {
+      "move_to_desc_regex": [
+        "^\\s*ESTE ODU HABLA: ARTICULACIONES SINOVIALES Y LA RÓTULA EN LOS HUMANOS\\.[\\s\\S]{0,6000}?(?=^\\s*EN ESTE ODU, SE LE PONE A ESHU UN PEDAZO DE CAÑA BRAVA PARA RESOLVER SITUACIONES\\.)"
+      ],
+      "remove_from_nace_regex": [
+        "^\\s*ESTE ODU HABLA: ARTICULACIONES SINOVIALES Y LA RÓTULA EN LOS HUMANOS\\.[\\s\\S]{0,6000}?(?=^\\s*EN ESTE ODU, SE LE PONE A ESHU UN PEDAZO DE CAÑA BRAVA PARA RESOLVER SITUACIONES\\.)"
+      ]
+    },
+    "descripcion": {
+      "append_from_nace_regex": [
+        "^\\s*ESTE ODU HABLA: ARTICULACIONES SINOVIALES Y LA RÓTULA EN LOS HUMANOS\\.[\\s\\S]{0,6000}?(?=^\\s*EN ESTE ODU, SE LE PONE A ESHU UN PEDAZO DE CAÑA BRAVA PARA RESOLVER SITUACIONES\\.)"
+      ]
+    }
+  },
+  "OJUANI BOFUN": {
+    "nace": {
+      "move_to_desc_regex": [
+        "^\\s*ESTE ODU HABLA DE ABANDONO PERSONAL\\.(?:\\n[\\s\\S]{0,300}?)?(?:AQUÍ\\s+LA\\s+PERSONA\\s+SE\\s+TOMA\\s+ATRIBUCIONES\\s+SIN\\s+TENER\\s+POTESTAD\\s+PARA\\s+HACERLO\\s+Y\\s+DA\\s+CRITERIOS\\s+SIN\\s+HABÉRSELO\\s+PEDIDO,)[\\s\\S]{0,4500}?(?=^\\s*(?:ESHU(?:\\b|[\\s:\\-–—])|EWES\\b|OBRAS\\b|DICE\\s+IF[ÁA]\\b|DICE\\s+IFA\\b|REZO\\b|SUYERE\\b|PAT(?:A|Á)K(?:I|Í)E|HISTORIAS?\\b|EN\\s+ESTE\\s+OD(?:U|O|Ù)\\b)\\b|(?![\\s\\S]))"
+      ],
+      "remove_from_nace_regex": [
+        "^\\s*ESTE ODU HABLA DE ABANDONO PERSONAL\\.(?:\\n[\\s\\S]{0,300}?)?(?:AQUÍ\\s+LA\\s+PERSONA\\s+SE\\s+TOMA\\s+ATRIBUCIONES\\s+SIN\\s+TENER\\s+POTESTAD\\s+PARA\\s+HACERLO\\s+Y\\s+DA\\s+CRITERIOS\\s+SIN\\s+HABÉRSELO\\s+PEDIDO,)[\\s\\S]{0,4500}?(?=^\\s*(?:ESHU(?:\\b|[\\s:\\-–—])|EWES\\b|OBRAS\\b|DICE\\s+IF[ÁA]\\b|DICE\\s+IFA\\b|REZO\\b|SUYERE\\b|PAT(?:A|Á)K(?:I|Í)E|HISTORIAS?\\b|EN\\s+ESTE\\s+OD(?:U|O|Ù)\\b)\\b|(?![\\s\\S]))"
+      ]
+    },
+    "descripcion": {
+      "append_from_nace_regex": [
+        "^\\s*ESTE ODU HABLA DE ABANDONO PERSONAL\\.(?:\\n[\\s\\S]{0,300}?)?(?:AQUÍ\\s+LA\\s+PERSONA\\s+SE\\s+TOMA\\s+ATRIBUCIONES\\s+SIN\\s+TENER\\s+POTESTAD\\s+PARA\\s+HACERLO\\s+Y\\s+DA\\s+CRITERIOS\\s+SIN\\s+HABÉRSELO\\s+PEDIDO,)[\\s\\S]{0,4500}?(?=^\\s*(?:ESHU(?:\\b|[\\s:\\-–—])|EWES\\b|OBRAS\\b|DICE\\s+IF[ÁA]\\b|DICE\\s+IFA\\b|REZO\\b|SUYERE\\b|PAT(?:A|Á)K(?:I|Í)E|HISTORIAS?\\b|EN\\s+ESTE\\s+OD(?:U|O|Ù)\\b)\\b|(?![\\s\\S]))"
+      ]
+    }
+  },
+  "OSHE YEKUN": {
+    "nace": {
+      "move_to_desc_regex": [
+        "^\\s*ESTE ODU MARCA: LA LLEGADA DE LA CATALEPSIA O ESTADO PRELIMINAR A LA MUERTE\\.(?:\\n[\\s\\S]{0,300}?)?(?:OSHE\\s+YEKU\\s+ES\\s+EL\\s+CAPATAZ\\s+DE\\s+TODOS\\s+LOS\\s+OBÁ\\s+EN\\s+ARA-ONU\\s+\\(CIELO\\))[\\s\\S]{0,4500}?(?=^\\s*(?:ESHU(?:\\b|[\\s:\\-–—])|EWES\\b|OBRAS\\b|DICE\\s+IF[ÁA]\\b|DICE\\s+IFA\\b|REZO\\b|SUYERE\\b|PAT(?:A|Á)K(?:I|Í)E|HISTORIAS?\\b|EN\\s+ESTE\\s+OD(?:U|O|Ù)\\b)\\b|(?![\\s\\S]))"
+      ],
+      "remove_from_nace_regex": [
+        "^\\s*ESTE ODU MARCA: LA LLEGADA DE LA CATALEPSIA O ESTADO PRELIMINAR A LA MUERTE\\.(?:\\n[\\s\\S]{0,300}?)?(?:OSHE\\s+YEKU\\s+ES\\s+EL\\s+CAPATAZ\\s+DE\\s+TODOS\\s+LOS\\s+OBÁ\\s+EN\\s+ARA-ONU\\s+\\(CIELO\\))[\\s\\S]{0,4500}?(?=^\\s*(?:ESHU(?:\\b|[\\s:\\-–—])|EWES\\b|OBRAS\\b|DICE\\s+IF[ÁA]\\b|DICE\\s+IFA\\b|REZO\\b|SUYERE\\b|PAT(?:A|Á)K(?:I|Í)E|HISTORIAS?\\b|EN\\s+ESTE\\s+OD(?:U|O|Ù)\\b)\\b|(?![\\s\\S]))"
+      ]
+    },
+    "descripcion": {
+      "append_from_nace_regex": [
+        "^\\s*ESTE ODU MARCA: LA LLEGADA DE LA CATALEPSIA O ESTADO PRELIMINAR A LA MUERTE\\.(?:\\n[\\s\\S]{0,300}?)?(?:OSHE\\s+YEKU\\s+ES\\s+EL\\s+CAPATAZ\\s+DE\\s+TODOS\\s+LOS\\s+OBÁ\\s+EN\\s+ARA-ONU\\s+\\(CIELO\\))[\\s\\S]{0,4500}?(?=^\\s*(?:ESHU(?:\\b|[\\s:\\-–—])|EWES\\b|OBRAS\\b|DICE\\s+IF[ÁA]\\b|DICE\\s+IFA\\b|REZO\\b|SUYERE\\b|PAT(?:A|Á)K(?:I|Í)E|HISTORIAS?\\b|EN\\s+ESTE\\s+OD(?:U|O|Ù)\\b)\\b|(?![\\s\\S]))"
+      ]
+    }
+  }
+}

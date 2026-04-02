@@ -1,6 +1,6 @@
 # IFA AJAKO - Estado del proyecto
 
-Fecha: 2026-02-01
+Fecha: 2026-02-04
 
 ## Contexto
 Proyecto Flutter en `/Users/fxaleman03gmail.com/Dev/LibretaDeIFA`.
@@ -11,6 +11,10 @@ Repo GitHub: `https://github.com/fxaleman03-coder/IFA_AJAKO`.
 - Traducciones: el cache se carga mejor y se consulta antes de intentar traducir.
 - Patakies: se agregaron **títulos** (sin contenido) para **OGBE OYECU / OGBE OYEKU** en "Historias y Patakies".
 - Mapa de patakies: se agregó doble clave para asegurar coincidencia (`OGBE OYECU` y `OGBE OYEKU`).
+- OGBE KANA: contenido agregado desde `IMG/OGBE KANA.pdf`.
+- OGBE KANA: tarjetas de patakies agregadas desde `IMG/LISTA DE PATAKIES DE OGBE KANA.pdf`.
+- macOS: integración de CocoaPods corregida (configs Debug/Release/Profile + README).
+- iOS: integración de CocoaPods corregida (Profile.xcconfig + plataforma en Podfile).
 
 ## Archivos relevantes
 - `lib/main.dart`: contiene todo el contenido, lógica de traducción y patakies.
@@ -25,4 +29,4 @@ Repo GitHub: `https://github.com/fxaleman03-coder/IFA_AJAKO`.
 ## Notas
 - La traducción funciona con un servidor local (`tools/translation_server`).
 - Sin servidor o sin cache local, mostrará texto original y luego la traducción si existe.
-
+- Xcode: abrir siempre `macos/Runner.xcworkspace` y `ios/Runner.xcworkspace` para cargar CocoaPods.

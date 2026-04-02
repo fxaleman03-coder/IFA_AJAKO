@@ -1,0 +1,130 @@
+{
+  "topics": [
+    {
+      "id": "dinero",
+      "label": "Dinero",
+      "synonyms": [
+        "dinero",
+        "plata",
+        "riqueza",
+        "prosperidad",
+        "negocio",
+        "fortuna",
+        "abundancia"
+      ],
+      "hints": ["economia", "ingresos"]
+    },
+    {
+      "id": "enfermedad",
+      "label": "Enfermedad",
+      "synonyms": [
+        "enfermedad",
+        "arun",
+        "dolor",
+        "fiebre",
+        "padecer",
+        "hospital",
+        "medico",
+        "parasitos",
+        "parásitos",
+        "tuberculosis"
+      ],
+      "hints": ["salud", "curacion"]
+    },
+    {
+      "id": "muerte",
+      "label": "Muerte",
+      "synonyms": [
+        "iku",
+        "muerte",
+        "egun",
+        "difunto",
+        "cementerio",
+        "sepultura"
+      ],
+      "hints": ["egun", "funeral"]
+    },
+    {
+      "id": "enemigos",
+      "label": "Enemigos",
+      "synonyms": [
+        "enemigo",
+        "enemigos",
+        "osogbo",
+        "osobo",
+        "brujeria",
+        "brujería",
+        "hechiceria",
+        "hechicería",
+        "trampa",
+        "traicion",
+        "traición",
+        "envidia"
+      ],
+      "hints": ["ataque", "daño"]
+    },
+    {
+      "id": "proteccion",
+      "label": "Protección",
+      "synonyms": [
+        "proteccion",
+        "protección",
+        "resguardo",
+        "osanyin",
+        "inshe",
+        "inshe osanyin",
+        "inshe-osanyin",
+        "insheosanyin",
+        "inshe osain",
+        "inshé",
+        "inshé-osanyin",
+        "inshé osanyin",
+        "amuleto",
+        "defensa"
+      ],
+      "hints": ["resguardo", "escudo"]
+    },
+    {
+      "id": "amor",
+      "label": "Amor",
+      "synonyms": [
+        "amor",
+        "pareja",
+        "matrimonio",
+        "esposo",
+        "esposa",
+        "celos",
+        "infidelidad"
+      ],
+      "hints": ["relacion", "relación"]
+    },
+    {
+      "id": "justicia",
+      "label": "Justicia",
+      "synonyms": [
+        "legal",
+        "juicio",
+        "tribunal",
+        "gobierno",
+        "acusacion",
+        "acusación",
+        "crimen",
+        "castigado"
+      ],
+      "hints": ["ley", "proceso"]
+    },
+    {
+      "id": "salud_mental",
+      "label": "Salud mental",
+      "synonyms": [
+        "salud mental",
+        "paranoia",
+        "locura",
+        "delirio",
+        "psicosis",
+        "mente"
+      ],
+      "hints": ["mental", "emocional"]
+    }
+  ]
+}

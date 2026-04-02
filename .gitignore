@@ -34,7 +34,15 @@ macos/Flutter/GeneratedPluginRegistrant.swift
 .DS_Store
 .metadata
 .flutter-plugins-dependencies
+~$*
 
 # Local secrets
 tools/translation_server/.env
 tools/translation_server/.env.save
+
+# Local backup and debug artifacts
+*.bak
+*.bak*
+*.backup.json
+*.xcappdata/
+xcappdata/
